@@ -88,7 +88,7 @@ section {
     padding-top: 60px; 
 }
 
-/* Also update these styles in your main CSS */
+/* Also update these styles in  main CSS */
 .home-content {
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@ section {
 }
 
 h1, p {
-    position: relative; /* Add this */
+    position: relative; 
     z-index: 2; /* Add this */
 }
 
@@ -426,7 +426,7 @@ about, .projects {
     text-align: center; /* Centers the heading text */
     font-size: 2.4rem; /* Adjust this size as needed */
     font-weight: bold; /* Optional: Make it bolder for emphasis */
-    color: var(--main-color); /* Optional: change to your preferred color */
+    color: var(--main-color); /* Optional: change to preferred color */
     margin-bottom: 2rem; /* Add space below the heading */
 }
 
