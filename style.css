@@ -528,10 +528,9 @@ footer .copyright {
     color: white;
 }
 /* Queries*/
-
 @media (max-width: 1285px) {
     html {
-        font-size: 90%;
+        font-size: 76%;
     }
 
     .projects-container {
