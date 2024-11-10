@@ -635,6 +635,7 @@ footer .copyright {
     .home-img img {
         width: 70%;
         margin: 2rem auto 0;
+        display: block; /* Center the home image */
     }
 
     .about {
@@ -644,7 +645,11 @@ footer .copyright {
 
     .about img {
         width: 70%;
-        margin: 0 auto 2rem;
+        margin: 0 auto; /* Center the about image */
+    }
+
+    .about h2 {
+        margin-top: 1rem; /* Adjust margin to close the gap */
     }
 
     .projects h2 {
@@ -673,11 +678,18 @@ footer .copyright {
 
     .home-img img {
         width: 85%;
-        
+        display: block; /* Center the home image */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about img {
         width: 85%;
+        margin: 0 auto; /* Center the about image */
+    }
+
+    .about h2 {
+        margin-top: 1rem; /* Adjust margin to close the gap */
     }
 
     .navbar {
@@ -709,6 +721,15 @@ footer .copyright {
 
     .about-content {
         padding: 0 1rem;
+    }
+
+    .about img {
+        width: 85%;
+        margin: 0 auto; /* Center the about image */
+    }
+
+    .about h2 {
+        margin-top: 1rem; /* Adjust margin to close the gap */
     }
 
     .navbar {
