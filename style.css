@@ -527,148 +527,215 @@ footer .copyright {
     font-size: 16px;
     color: white;
 }
-/* Queries*/
-@media (max-width: 1285px) {
+/* Large Desktop and TV Screens */
+@media (min-width: 1441px) {
     html {
-        font-size: 76%;
+        font-size: 85%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding: 0 4rem;
+    }
+}
+
+/* Desktop Screens */
+@media (max-width: 1440px) {
+    html {
+        font-size: 80%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        padding: 0 3rem;
+    }
+}
+
+/* Small Desktop/Large Tablet */
+@media (max-width: 1024px) {
+    html {
+        font-size: 75%;
+    }
+
+    header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 8rem 4% 2rem;
+        margin-bottom: 1rem;
     }
 
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        padding: 0 3rem;
     }
-}
-@media(max-width:991px){
-    header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .projects{
-        padding-bottom: 1rem;
-    }
-    .footer{
-        padding: 2rem 3%;
+
+    .projects-box {
+        min-width: 280px;
     }
 }
 
-@media(max-width:895px){
-    #menu-icon{
+/* Tablets */
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+    #menu-icon {
         display: block;
     }
-    .navbar{
-        position: absolute;
+
+    .navbar {
+        position: fixed;
         top: 100%;
         right: 0;
-        width: 50%;
-        padding: 1rem 3%;
-        background: black;
-        backdrop-filter: blur(20px);
+        width: 80%;
+        max-width: 400px;
+        padding: 1.5rem 4%;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         display: none;
+        z-index: 999;
     }
-    .navbar.active{
+
+    .navbar.active {
         display: block;
     }
 
-    .navbar a{
+    .navbar a {
         display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+        font-size: 1.8rem;
+        margin: 2rem 0;
         color: white;
     }
 
-    .home{
+    .home {
         flex-direction: column;
-        margin: 2rem 2rem;
+        padding: 6rem 4% 2rem;
     }
 
-    .home-content h3{
-        font-size: 2,6rem;
+    .home-content {
+        text-align: center;
     }
 
-    .home-content h1{
-        font-size: 6rem;
-        margin-top: 3rem;
+    .home-content h3 {
+        font-size: 2.4rem;
     }
 
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
+    .home-content h1 {
+        font-size: 5rem;
     }
 
-    .home-img img{
-        width: 56vw;
-        margin-top: -2rem;
+    .home-img img {
+        width: 70%;
+        margin: 2rem auto 0;
     }
 
-    .about{
+    .about {
         flex-direction: column-reverse;
+        padding: 4rem 4% 2rem;
     }
 
-    .about-content{
-        margin: 0 2rem 2rem;
+    .about img {
+        width: 70%;
+        margin: 0 auto 2rem;
     }
 
-    .about img{
-        width: 52vw;
-        margin-top: 0rem;
-        margin-bottom: 2rem;
-    }
-
-    .projects h2{
-        margin-bottom: 3rem;
-    }
-
-    .projects-container{
-        grid-template-columns: repeat(1,1fr);
+    .projects h2 {
+        margin-bottom: 2.5rem;
     }
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 1024px) {
-    .projects {
-        padding: 4rem 5% 2rem;
+/* Large Phones */
+@media (max-width: 576px) {
+    html {
+        font-size: 65%;
     }
 
-    .projects-box {
-        min-width: 250px;
-    }
-
-    section {
-        margin-bottom: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects {
-        padding: 3rem 4% 1.5rem;
-    }
-
-    .projects-box {
-        min-width: 220px;
-        height: auto; /* Adjust height for smaller screens /
-        flex: 1 1 calc(50% - 2.5rem); / Adjust for gap */
-    }
-
-    section {
-        padding-bottom: 12px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .projects {
-        padding: 2rem 3% 1rem;
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
     }
 
     .projects-box {
         min-width: 100%;
-        height: auto; 
-        flex: 1 1 100%; 
+    }
+
+    .home-content h1 {
+        font-size: 4.2rem;
+    }
+
+    .home-img img {
+        width: 85%;
+        
+    }
+
+    .about img {
+        width: 85%;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 375px) {
+    html {
+        font-size: 60%;
+    }
+
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .projects {
+        padding: 2rem 1.5rem;
+    }
+
+    .projects-container {
+        padding: 0 1rem;
+    }
+
+    .about-content {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Height-based queries for shorter screens */
+@media (max-height: 700px) {
+    section {
+        padding-top: 6rem;
+    }
+
+    .home {
+        min-height: auto;
+    }
+}
+
+/* Handle notched phones */
+@supports (padding: max(0px)) {
+    header {
+        padding-left: max(4%, env(safe-area-inset-left));
+        padding-right: max(4%, env(safe-area-inset-right));
+    }
+
+    .navbar {
+        padding-right: max(4%, env(safe-area-inset-right));
     }
 }
